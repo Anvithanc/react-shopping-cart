@@ -1,0 +1,28 @@
+/* .categories {
+  width: 35p0x;
+}
+
+.categories p {
+  margin: 6px 0px;
+}
+
+.item-prices {
+  display: flex;
+  gap: 20px;
+}
+
+.item-price-new {
+  color: blue;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item-price-new {
+  color: blue;
+  text-decoration: line-through;
+}
+
+.categories:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+} */
