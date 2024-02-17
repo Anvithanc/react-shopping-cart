@@ -13,6 +13,7 @@ const getDefaultCart = () => {
 
 const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
+  const [search, setSearch] = useState("");
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
@@ -53,15 +54,22 @@ const ShopContextProvider = (props) => {
     setCartItems(getDefaultCart());
   };
 
+  const setSearchText = (search) => {
+    setSearch(search);
+    console.log(search);
+  };
+
   const contextValue = {
     all_product,
     cartItems,
+    search,
     addToCart,
     removeFromCart,
     getTotalCartAmount,
     getTotalCartItems,
     removeItemFromCart,
     removeAll,
+    setSearchText,
   };
 
   return (

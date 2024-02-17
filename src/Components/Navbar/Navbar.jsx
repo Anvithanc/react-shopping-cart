@@ -5,13 +5,18 @@ import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
 
 const Navbar = () => {
-  const { getTotalCartItems } = useContext(ShopContext);
+  const { getTotalCartItems, setSearchText } = useContext(ShopContext);
 
   return (
     <div className="navBarContainer">
       <div className="heading">Shopping Cart</div>
       <div className="searchBar">
-        <input type="text" className="search" placeholder="search" />
+        <input
+          type="text"
+          className="search"
+          placeholder="search"
+          onChange={(e) => setSearchText(e.target.value)}
+        />
         <Link className="linkNames" to="/cart">
           {" "}
           <div className="imgContainer">
