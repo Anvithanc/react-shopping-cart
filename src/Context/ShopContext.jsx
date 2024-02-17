@@ -56,7 +56,6 @@ const ShopContextProvider = (props) => {
 
   const setSearchText = (search) => {
     setSearch(search);
-    console.log(search);
   };
 
   const contextValue = {

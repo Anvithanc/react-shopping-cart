@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from "react";
-import Category from "../../Components/Category/Category";
 import { ShopContext } from "../../Context/ShopContext";
 import Item from "../../Components/Item/Item";
 import "./ShopCategory.css";
